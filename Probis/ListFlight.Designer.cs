@@ -1,6 +1,6 @@
 ﻿namespace Probis
 {
-    partial class masterFlight
+    partial class ListFlight
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(masterFlight));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListFlight));
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_listflight = new System.Windows.Forms.DataGridView();
-            this.btn_hapus = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btn_baru = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btn_edit = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btn_Back = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +38,9 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_hapus = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btn_baru = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btn_Back = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listflight)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +71,41 @@
             this.dgv_listflight.RowTemplate.Height = 28;
             this.dgv_listflight.Size = new System.Drawing.Size(753, 513);
             this.dgv_listflight.TabIndex = 14;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ID Flight";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Maskapai";
+            this.Column2.Name = "Column2";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Jenis";
+            this.Column7.Name = "Column7";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Dari";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Tujuan";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Jam";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Harga";
+            this.Column6.Name = "Column6";
             // 
             // btn_hapus
             // 
@@ -123,31 +157,6 @@
             this.btn_baru.TabIndex = 73;
             this.btn_baru.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btn_edit
-            // 
-            this.btn_edit.ActiveBorderThickness = 1;
-            this.btn_edit.ActiveCornerRadius = 20;
-            this.btn_edit.ActiveFillColor = System.Drawing.Color.PaleGreen;
-            this.btn_edit.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_edit.ActiveLineColor = System.Drawing.Color.Pink;
-            this.btn_edit.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_edit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_edit.BackgroundImage")));
-            this.btn_edit.ButtonText = "Edit";
-            this.btn_edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_edit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit.ForeColor = System.Drawing.Color.Black;
-            this.btn_edit.IdleBorderThickness = 1;
-            this.btn_edit.IdleCornerRadius = 20;
-            this.btn_edit.IdleFillColor = System.Drawing.Color.ForestGreen;
-            this.btn_edit.IdleForecolor = System.Drawing.Color.White;
-            this.btn_edit.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_edit.Location = new System.Drawing.Point(363, 642);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(122, 51);
-            this.btn_edit.TabIndex = 75;
-            this.btn_edit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btn_Back
             // 
             this.btn_Back.ActiveBorderThickness = 1;
@@ -173,53 +182,17 @@
             this.btn_Back.TabIndex = 76;
             this.btn_Back.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID Flight";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Maskapai";
-            this.Column2.Name = "Column2";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Jenis";
-            this.Column7.Name = "Column7";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Dari";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Tujuan";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Jam";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Harga";
-            this.Column6.Name = "Column6";
-            // 
-            // masterFlight
+            // ListFlight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 719);
             this.Controls.Add(this.btn_Back);
-            this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_hapus);
             this.Controls.Add(this.btn_baru);
             this.Controls.Add(this.dgv_listflight);
             this.Controls.Add(this.label1);
-            this.Name = "masterFlight";
+            this.Name = "ListFlight";
             this.Text = "masterFlight";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listflight)).EndInit();
             this.ResumeLayout(false);
@@ -233,7 +206,6 @@
         private System.Windows.Forms.DataGridView dgv_listflight;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_hapus;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_baru;
-        private Bunifu.Framework.UI.BunifuThinButton2 btn_edit;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_Back;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

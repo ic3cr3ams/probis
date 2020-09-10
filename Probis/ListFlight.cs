@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Probis
 {
-    public partial class Hotel : Form
+    public partial class ListFlight : Form
     {
-        public Hotel()
+        public ListFlight()
         {
             InitializeComponent();
         }

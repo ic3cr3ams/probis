@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Probis
 {
-    public partial class payTrains : Form
+    public partial class addFlight : Form
     {
-        public payTrains()
+        public addFlight()
         {
             InitializeComponent();
         }

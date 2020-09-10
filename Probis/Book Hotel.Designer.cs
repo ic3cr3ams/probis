@@ -36,8 +36,6 @@
             this.dtp_checkout = new Bunifu.Framework.UI.BunifuDatepicker();
             this.dtp_checkin = new Bunifu.Framework.UI.BunifuDatepicker();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txt_namaPesan = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -48,9 +46,8 @@
             this.rbtn_royal = new System.Windows.Forms.RadioButton();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.btn_bayar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btn_Pesan = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_batal = new Bunifu.Framework.UI.BunifuThinButton2();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -131,28 +128,6 @@
             this.bunifuCustomLabel4.TabIndex = 31;
             this.bunifuCustomLabel4.Text = "xxxxx ";
             // 
-            // bunifuCustomLabel5
-            // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Square721 Cn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(75, 436);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(157, 29);
-            this.bunifuCustomLabel5.TabIndex = 32;
-            this.bunifuCustomLabel5.Text = "Banyak Kamar :";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(248, 441);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(68, 26);
-            this.numericUpDown1.TabIndex = 33;
-            // 
             // bunifuCustomLabel6
             // 
             this.bunifuCustomLabel6.AutoSize = true;
@@ -177,7 +152,7 @@
             // 
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Square721 Cn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(151, 488);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(155, 445);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(81, 29);
             this.bunifuCustomLabel7.TabIndex = 36;
@@ -245,7 +220,7 @@
             // 
             this.bunifuCustomLabel9.AutoSize = true;
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Square721 Cn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(238, 488);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(242, 445);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
             this.bunifuCustomLabel9.Size = new System.Drawing.Size(43, 29);
             this.bunifuCustomLabel9.TabIndex = 42;
@@ -255,36 +230,36 @@
             // 
             this.bunifuCustomLabel10.AutoSize = true;
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Square721 Cn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(287, 488);
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(291, 445);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
             this.bunifuCustomLabel10.Size = new System.Drawing.Size(69, 29);
             this.bunifuCustomLabel10.TabIndex = 43;
             this.bunifuCustomLabel10.Text = "xxxxx ";
             // 
-            // btn_bayar
+            // btn_Pesan
             // 
-            this.btn_bayar.ActiveBorderThickness = 1;
-            this.btn_bayar.ActiveCornerRadius = 20;
-            this.btn_bayar.ActiveFillColor = System.Drawing.Color.ForestGreen;
-            this.btn_bayar.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_bayar.ActiveLineColor = System.Drawing.Color.DarkBlue;
-            this.btn_bayar.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_bayar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_bayar.BackgroundImage")));
-            this.btn_bayar.ButtonText = "Bayar";
-            this.btn_bayar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_bayar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_bayar.ForeColor = System.Drawing.Color.Black;
-            this.btn_bayar.IdleBorderThickness = 1;
-            this.btn_bayar.IdleCornerRadius = 20;
-            this.btn_bayar.IdleFillColor = System.Drawing.Color.ForestGreen;
-            this.btn_bayar.IdleForecolor = System.Drawing.Color.White;
-            this.btn_bayar.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_bayar.Location = new System.Drawing.Point(414, 535);
-            this.btn_bayar.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btn_bayar.Name = "btn_bayar";
-            this.btn_bayar.Size = new System.Drawing.Size(122, 51);
-            this.btn_bayar.TabIndex = 44;
-            this.btn_bayar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Pesan.ActiveBorderThickness = 1;
+            this.btn_Pesan.ActiveCornerRadius = 20;
+            this.btn_Pesan.ActiveFillColor = System.Drawing.Color.ForestGreen;
+            this.btn_Pesan.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_Pesan.ActiveLineColor = System.Drawing.Color.DarkBlue;
+            this.btn_Pesan.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_Pesan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Pesan.BackgroundImage")));
+            this.btn_Pesan.ButtonText = "Pesan";
+            this.btn_Pesan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Pesan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Pesan.ForeColor = System.Drawing.Color.Black;
+            this.btn_Pesan.IdleBorderThickness = 1;
+            this.btn_Pesan.IdleCornerRadius = 20;
+            this.btn_Pesan.IdleFillColor = System.Drawing.Color.ForestGreen;
+            this.btn_Pesan.IdleForecolor = System.Drawing.Color.White;
+            this.btn_Pesan.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_Pesan.Location = new System.Drawing.Point(414, 487);
+            this.btn_Pesan.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btn_Pesan.Name = "btn_Pesan";
+            this.btn_Pesan.Size = new System.Drawing.Size(122, 51);
+            this.btn_Pesan.TabIndex = 44;
+            this.btn_Pesan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_batal
             // 
@@ -304,7 +279,7 @@
             this.btn_batal.IdleFillColor = System.Drawing.Color.Crimson;
             this.btn_batal.IdleForecolor = System.Drawing.Color.White;
             this.btn_batal.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_batal.Location = new System.Drawing.Point(51, 535);
+            this.btn_batal.Location = new System.Drawing.Point(37, 487);
             this.btn_batal.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btn_batal.Name = "btn_batal";
             this.btn_batal.Size = new System.Drawing.Size(122, 51);
@@ -315,9 +290,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 599);
+            this.ClientSize = new System.Drawing.Size(581, 547);
             this.Controls.Add(this.btn_batal);
-            this.Controls.Add(this.btn_bayar);
+            this.Controls.Add(this.btn_Pesan);
             this.Controls.Add(this.bunifuCustomLabel10);
             this.Controls.Add(this.bunifuCustomLabel9);
             this.Controls.Add(this.rbtn_royal);
@@ -328,8 +303,6 @@
             this.Controls.Add(this.bunifuCustomLabel7);
             this.Controls.Add(this.txt_namaPesan);
             this.Controls.Add(this.bunifuCustomLabel6);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.bunifuCustomLabel4);
             this.Controls.Add(this.dtp_checkin);
             this.Controls.Add(this.dtp_checkout);
@@ -339,7 +312,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Book_Hotel";
             this.Text = "Book_Hotel";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,8 +326,6 @@
         private Bunifu.Framework.UI.BunifuDatepicker dtp_checkout;
         private Bunifu.Framework.UI.BunifuDatepicker dtp_checkin;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private System.Windows.Forms.TextBox txt_namaPesan;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
@@ -366,7 +336,7 @@
         private System.Windows.Forms.RadioButton rbtn_royal;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
-        private Bunifu.Framework.UI.BunifuThinButton2 btn_bayar;
+        private Bunifu.Framework.UI.BunifuThinButton2 btn_Pesan;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_batal;
     }
 }

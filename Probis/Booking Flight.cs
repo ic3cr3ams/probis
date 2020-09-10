@@ -16,5 +16,10 @@ namespace Probis
         {
             InitializeComponent();
         }
+
+        private void bunifuCustomLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

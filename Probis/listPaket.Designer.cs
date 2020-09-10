@@ -1,6 +1,6 @@
 ﻿namespace Probis
 {
-    partial class masterHotel
+    partial class listPaket
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(masterHotel));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(listPaket));
             this.btn_Back = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_edit = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_hapus = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_baru = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.dgv_listflight = new System.Windows.Forms.DataGridView();
+            this.dgv_listpaket = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_listflight)).BeginInit();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_listpaket)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Back
@@ -60,11 +61,11 @@
             this.btn_Back.IdleFillColor = System.Drawing.Color.Crimson;
             this.btn_Back.IdleForecolor = System.Drawing.Color.WhiteSmoke;
             this.btn_Back.IdleLineColor = System.Drawing.Color.Black;
-            this.btn_Back.Location = new System.Drawing.Point(688, 9);
+            this.btn_Back.Location = new System.Drawing.Point(682, 11);
             this.btn_Back.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btn_Back.Name = "btn_Back";
             this.btn_Back.Size = new System.Drawing.Size(98, 40);
-            this.btn_Back.TabIndex = 86;
+            this.btn_Back.TabIndex = 82;
             this.btn_Back.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_edit
@@ -85,11 +86,11 @@
             this.btn_edit.IdleFillColor = System.Drawing.Color.ForestGreen;
             this.btn_edit.IdleForecolor = System.Drawing.Color.White;
             this.btn_edit.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_edit.Location = new System.Drawing.Point(364, 629);
+            this.btn_edit.Location = new System.Drawing.Point(366, 625);
             this.btn_edit.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(122, 51);
-            this.btn_edit.TabIndex = 85;
+            this.btn_edit.TabIndex = 81;
             this.btn_edit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_hapus
@@ -110,11 +111,11 @@
             this.btn_hapus.IdleFillColor = System.Drawing.Color.LightPink;
             this.btn_hapus.IdleForecolor = System.Drawing.Color.Crimson;
             this.btn_hapus.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_hapus.Location = new System.Drawing.Point(664, 629);
+            this.btn_hapus.Location = new System.Drawing.Point(666, 625);
             this.btn_hapus.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btn_hapus.Name = "btn_hapus";
             this.btn_hapus.Size = new System.Drawing.Size(122, 51);
-            this.btn_hapus.TabIndex = 84;
+            this.btn_hapus.TabIndex = 80;
             this.btn_hapus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_baru
@@ -135,72 +136,78 @@
             this.btn_baru.IdleFillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_baru.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.btn_baru.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_baru.Location = new System.Drawing.Point(25, 629);
+            this.btn_baru.Location = new System.Drawing.Point(27, 625);
             this.btn_baru.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btn_baru.Name = "btn_baru";
             this.btn_baru.Size = new System.Drawing.Size(184, 51);
-            this.btn_baru.TabIndex = 83;
+            this.btn_baru.TabIndex = 79;
             this.btn_baru.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dgv_listflight
+            // dgv_listpaket
             // 
-            this.dgv_listflight.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_listflight.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_listflight.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column7,
-            this.Column6});
-            this.dgv_listflight.Location = new System.Drawing.Point(23, 92);
-            this.dgv_listflight.Name = "dgv_listflight";
-            this.dgv_listflight.RowTemplate.Height = 28;
-            this.dgv_listflight.Size = new System.Drawing.Size(753, 513);
-            this.dgv_listflight.TabIndex = 82;
+            this.dgv_listpaket.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_listpaket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_listpaket.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12});
+            this.dgv_listpaket.Location = new System.Drawing.Point(27, 87);
+            this.dgv_listpaket.Name = "dgv_listpaket";
+            this.dgv_listpaket.RowTemplate.Height = 28;
+            this.dgv_listpaket.Size = new System.Drawing.Size(753, 513);
+            this.dgv_listpaket.TabIndex = 78;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(287, 18);
+            this.label1.Location = new System.Drawing.Point(239, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 55);
-            this.label1.TabIndex = 81;
-            this.label1.Text = "List Hotel";
+            this.label1.Size = new System.Drawing.Size(326, 55);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "List Paket Tour";
             // 
-            // Column1
+            // Column8
             // 
-            this.Column1.HeaderText = "ID Hotel";
-            this.Column1.Name = "Column1";
+            this.Column8.HeaderText = "ID Paket";
+            this.Column8.Name = "Column8";
             // 
-            // Column2
+            // Column9
             // 
-            this.Column2.HeaderText = "Hotel";
-            this.Column2.Name = "Column2";
+            this.Column9.HeaderText = "Nama Paket";
+            this.Column9.Name = "Column9";
             // 
-            // Column7
+            // Column10
             // 
-            this.Column7.HeaderText = "Jenis Kamar";
-            this.Column7.Name = "Column7";
+            this.Column10.HeaderText = "Tanggal Tour";
+            this.Column10.Name = "Column10";
             // 
-            // Column6
+            // Column11
             // 
-            this.Column6.HeaderText = "Harga";
-            this.Column6.Name = "Column6";
+            this.Column11.HeaderText = "Harga";
+            this.Column11.Name = "Column11";
             // 
-            // masterHotel
+            // Column12
+            // 
+            this.Column12.HeaderText = "Details";
+            this.Column12.Name = "Column12";
+            // 
+            // listPaket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 693);
+            this.ClientSize = new System.Drawing.Size(810, 698);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_hapus);
             this.Controls.Add(this.btn_baru);
-            this.Controls.Add(this.dgv_listflight);
+            this.Controls.Add(this.dgv_listpaket);
             this.Controls.Add(this.label1);
-            this.Name = "masterHotel";
-            this.Text = "masterHotel";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_listflight)).EndInit();
+            this.Name = "listPaket";
+            this.Text = "listPaket";
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_listpaket)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,11 +219,12 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btn_edit;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_hapus;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_baru;
-        private System.Windows.Forms.DataGridView dgv_listflight;
+        private System.Windows.Forms.DataGridView dgv_listpaket;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewButtonColumn Column12;
     }
 }

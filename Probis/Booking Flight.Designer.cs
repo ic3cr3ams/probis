@@ -51,7 +51,7 @@
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_nopassport = new System.Windows.Forms.TextBox();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_tambah = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgv_pesanan = new System.Windows.Forms.DataGridView();
@@ -124,7 +124,7 @@
             // 
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Square721 Cn BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(68, 263);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(82, 259);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(75, 24);
             this.bunifuCustomLabel7.TabIndex = 42;
@@ -189,7 +189,7 @@
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Square721 Cn BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(80, 215);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(94, 211);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(63, 24);
             this.bunifuCustomLabel1.TabIndex = 36;
@@ -303,21 +303,22 @@
             // 
             this.bunifuCustomLabel9.AutoSize = true;
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Square721 Cn BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(58, 365);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(33, 366);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(85, 24);
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(124, 24);
             this.bunifuCustomLabel9.TabIndex = 56;
-            this.bunifuCustomLabel9.Text = "No.KTP  : ";
+            this.bunifuCustomLabel9.Text = "No.Passport  : ";
+            this.bunifuCustomLabel9.Click += new System.EventHandler(this.bunifuCustomLabel9_Click);
             // 
-            // textBox1
+            // txt_nopassport
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(164, 360);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 35);
-            this.textBox1.TabIndex = 57;
+            this.txt_nopassport.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txt_nopassport.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nopassport.Location = new System.Drawing.Point(168, 358);
+            this.txt_nopassport.Multiline = true;
+            this.txt_nopassport.Name = "txt_nopassport";
+            this.txt_nopassport.Size = new System.Drawing.Size(266, 35);
+            this.txt_nopassport.TabIndex = 57;
             // 
             // bunifuThinButton21
             // 
@@ -337,7 +338,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Crimson;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(180, 412);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(27, 412);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(122, 51);
@@ -362,7 +363,7 @@
             this.btn_tambah.IdleFillColor = System.Drawing.Color.PaleGreen;
             this.btn_tambah.IdleForecolor = System.Drawing.Color.Green;
             this.btn_tambah.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_tambah.Location = new System.Drawing.Point(15, 412);
+            this.btn_tambah.Location = new System.Drawing.Point(189, 412);
             this.btn_tambah.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btn_tambah.Name = "btn_tambah";
             this.btn_tambah.Size = new System.Drawing.Size(122, 51);
@@ -431,7 +432,7 @@
             this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.DarkBlue;
             this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Bayar";
+            this.bunifuThinButton22.ButtonText = "Pesan";
             this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton22.ForeColor = System.Drawing.Color.Black;
@@ -456,7 +457,7 @@
             this.Controls.Add(this.dgv_pesanan);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.btn_tambah);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_nopassport);
             this.Controls.Add(this.bunifuCustomLabel9);
             this.Controls.Add(this.txt_harga);
             this.Controls.Add(this.bunifuCustomLabel8);
@@ -511,7 +512,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_nopassport;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_tambah;
         private System.Windows.Forms.DataGridView dgv_pesanan;
