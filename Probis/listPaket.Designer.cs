@@ -30,16 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(listPaket));
             this.btn_Back = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btn_edit = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_hapus = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_baru = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgv_listpaket = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listpaket)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,31 +66,6 @@
             this.btn_Back.Size = new System.Drawing.Size(98, 40);
             this.btn_Back.TabIndex = 82;
             this.btn_Back.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btn_edit
-            // 
-            this.btn_edit.ActiveBorderThickness = 1;
-            this.btn_edit.ActiveCornerRadius = 20;
-            this.btn_edit.ActiveFillColor = System.Drawing.Color.PaleGreen;
-            this.btn_edit.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_edit.ActiveLineColor = System.Drawing.Color.Pink;
-            this.btn_edit.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_edit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_edit.BackgroundImage")));
-            this.btn_edit.ButtonText = "Edit";
-            this.btn_edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_edit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit.ForeColor = System.Drawing.Color.Black;
-            this.btn_edit.IdleBorderThickness = 1;
-            this.btn_edit.IdleCornerRadius = 20;
-            this.btn_edit.IdleFillColor = System.Drawing.Color.ForestGreen;
-            this.btn_edit.IdleForecolor = System.Drawing.Color.White;
-            this.btn_edit.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_edit.Location = new System.Drawing.Point(366, 625);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(122, 51);
-            this.btn_edit.TabIndex = 81;
-            this.btn_edit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_hapus
             // 
@@ -159,16 +133,6 @@
             this.dgv_listpaket.Size = new System.Drawing.Size(753, 513);
             this.dgv_listpaket.TabIndex = 78;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(239, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(326, 55);
-            this.label1.TabIndex = 77;
-            this.label1.Text = "List Paket Tour";
-            // 
             // Column8
             // 
             this.Column8.HeaderText = "ID Paket";
@@ -194,13 +158,22 @@
             this.Column12.HeaderText = "Details";
             this.Column12.Name = "Column12";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(239, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(326, 55);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "List Paket Tour";
+            // 
             // listPaket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 698);
             this.Controls.Add(this.btn_Back);
-            this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_hapus);
             this.Controls.Add(this.btn_baru);
             this.Controls.Add(this.dgv_listpaket);
@@ -216,7 +189,6 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuThinButton2 btn_Back;
-        private Bunifu.Framework.UI.BunifuThinButton2 btn_edit;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_hapus;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_baru;
         private System.Windows.Forms.DataGridView dgv_listpaket;
