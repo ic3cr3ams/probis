@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.DataAccess.Client;
 
 namespace Probis
 {
@@ -15,6 +16,12 @@ namespace Probis
         public lisHotel()
         {
             InitializeComponent();
+
+        }
+               
+
+        private void lisHotel_Load(object sender, EventArgs e)
+        {            
         }
     }
 }

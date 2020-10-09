@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.DataAccess.Client;
 
 namespace Probis
 {
@@ -16,19 +17,62 @@ namespace Probis
         {
             InitializeComponent();
         }
-
-        private void bunifuTileButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
+        public static OracleConnection conn = new OracleConnection("Data Source=xe;User ID=probis;Password=probis");
+        DataSet ds = new DataSet();
+        DataTable dt = new DataTable();
+        OracleDataAdapter adapter = new OracleDataAdapter();
+        OracleCommand cmd;
+        
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+            if (txt_username.Text == "" && txt_pass.Text == "") MessageBox.Show("Harap Isi Semua Field ! ");
+            else {
+                if (txt_username.Text == "admin" && txt_pass.Text == "admin")
+                {
+                    HomeAdmin homeAdmin = new HomeAdmin();
+                    this.Hide();
+                    homeAdmin.ShowDialog();
+                    this.Show();
+                    txt_username.Text = "";
+                    txt_pass.Text = "";
+                }
+                else
+                {
+                    setupdata();
+                    bool cekuser=false, cekpass=false;
+                    string jabatan="";
+                    string user = "";
+                    foreach (DataTable table in ds.Tables)
+                    {
+                        foreach(DataRow row in table.Rows)
+                        {
+                            //user += row["uname"].ToString();
+                            if (row["uname"].ToString() == txt_username.Text) 
+                            {
+                                cekuser = true;
+                                if (row["pass"].ToString() == txt_pass.Text) {
+                                    cekpass = true;
+                                    jabatan = row["jabatan"].ToString();
+                                }
+                            }                                
+                        }
+                    }
+                    //MessageBox.Show(user);
+                    if(cekuser && cekpass) {
+                        MessageBox.Show("Berhasil Login "+jabatan+" !");
+                    }
+                    else {
+                        if (!cekuser) { MessageBox.Show("Username Tidak Ditemukan !"); }
+                        else if(!cekpass) { MessageBox.Show("Password Salah !"); }
+                    }
+                }
+            }
+        }
+        private void setupdata(){
+            string query = "Select PEGAWAI_USERNAME as uname,PEGAWAI_PASSWORD as pass,PEGAWAI_JABATAN as jabatan FROM pegawai ";
+            adapter = new OracleDataAdapter(query, conn);
+            adapter.Fill(ds);
 
         }
     }

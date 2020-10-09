@@ -32,9 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Back = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgv_listUser = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_baru = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_hapus = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listUser)).BeginInit();
@@ -44,9 +41,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(266, 29);
+            this.label1.Location = new System.Drawing.Point(177, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 55);
+            this.label1.Size = new System.Drawing.Size(80, 38);
             this.label1.TabIndex = 61;
             this.label1.Text = "User";
             // 
@@ -68,41 +66,27 @@
             this.btn_Back.IdleFillColor = System.Drawing.Color.Crimson;
             this.btn_Back.IdleForecolor = System.Drawing.Color.WhiteSmoke;
             this.btn_Back.IdleLineColor = System.Drawing.Color.Black;
-            this.btn_Back.Location = new System.Drawing.Point(563, 12);
-            this.btn_Back.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_Back.Location = new System.Drawing.Point(375, 8);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(98, 40);
+            this.btn_Back.Size = new System.Drawing.Size(65, 26);
             this.btn_Back.TabIndex = 62;
             this.btn_Back.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // dgv_listUser
             // 
+            this.dgv_listUser.AllowUserToAddRows = false;
+            this.dgv_listUser.AllowUserToDeleteRows = false;
             this.dgv_listUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_listUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            this.dgv_listUser.Location = new System.Drawing.Point(12, 106);
+            this.dgv_listUser.Location = new System.Drawing.Point(8, 69);
+            this.dgv_listUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_listUser.Name = "dgv_listUser";
+            this.dgv_listUser.ReadOnly = true;
             this.dgv_listUser.RowTemplate.Height = 28;
-            this.dgv_listUser.Size = new System.Drawing.Size(649, 427);
+            this.dgv_listUser.Size = new System.Drawing.Size(433, 278);
             this.dgv_listUser.TabIndex = 63;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Nama";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Username";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Jabatan";
-            this.Column3.Name = "Column3";
             // 
             // btn_baru
             // 
@@ -122,10 +106,10 @@
             this.btn_baru.IdleFillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_baru.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.btn_baru.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_baru.Location = new System.Drawing.Point(15, 561);
-            this.btn_baru.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btn_baru.Location = new System.Drawing.Point(10, 365);
+            this.btn_baru.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_baru.Name = "btn_baru";
-            this.btn_baru.Size = new System.Drawing.Size(184, 51);
+            this.btn_baru.Size = new System.Drawing.Size(123, 33);
             this.btn_baru.TabIndex = 71;
             this.btn_baru.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -147,25 +131,28 @@
             this.btn_hapus.IdleFillColor = System.Drawing.Color.LightPink;
             this.btn_hapus.IdleForecolor = System.Drawing.Color.Crimson;
             this.btn_hapus.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_hapus.Location = new System.Drawing.Point(539, 561);
-            this.btn_hapus.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btn_hapus.Location = new System.Drawing.Point(359, 365);
+            this.btn_hapus.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_hapus.Name = "btn_hapus";
-            this.btn_hapus.Size = new System.Drawing.Size(122, 51);
+            this.btn_hapus.Size = new System.Drawing.Size(81, 33);
             this.btn_hapus.TabIndex = 72;
             this.btn_hapus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // masterUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 634);
+            this.ClientSize = new System.Drawing.Size(457, 412);
             this.Controls.Add(this.btn_hapus);
             this.Controls.Add(this.btn_baru);
             this.Controls.Add(this.dgv_listUser);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "masterUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "masterUser";
+            this.Load += new System.EventHandler(this.masterUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -177,9 +164,6 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_Back;
         private System.Windows.Forms.DataGridView dgv_listUser;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_baru;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_hapus;
     }

@@ -43,21 +43,22 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Square721 Cn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(22, 167);
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(15, 109);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(124, 29);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(106, 20);
             this.bunifuCustomLabel1.TabIndex = 4;
             this.bunifuCustomLabel1.Text = "Username : ";
-            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Square721 Cn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(22, 237);
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(15, 154);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(123, 29);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(101, 20);
             this.bunifuCustomLabel2.TabIndex = 5;
             this.bunifuCustomLabel2.Text = "Password : ";
             // 
@@ -79,10 +80,10 @@
             this.btn_login.IdleFillColor = System.Drawing.Color.SkyBlue;
             this.btn_login.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_login.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_login.Location = new System.Drawing.Point(153, 294);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btn_login.Location = new System.Drawing.Point(102, 191);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(166, 59);
+            this.btn_login.Size = new System.Drawing.Size(111, 38);
             this.btn_login.TabIndex = 7;
             this.btn_login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
@@ -100,51 +101,57 @@
             this.bunifuCards1.Controls.Add(this.bunifuCustomLabel1);
             this.bunifuCards1.Controls.Add(this.pictureBox1);
             this.bunifuCards1.LeftSahddow = false;
-            this.bunifuCards1.Location = new System.Drawing.Point(-2, -4);
+            this.bunifuCards1.Location = new System.Drawing.Point(-1, -3);
+            this.bunifuCards1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(434, 409);
+            this.bunifuCards1.Size = new System.Drawing.Size(289, 266);
             this.bunifuCards1.TabIndex = 0;
             // 
             // txt_pass
             // 
             this.txt_pass.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txt_pass.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pass.Location = new System.Drawing.Point(153, 231);
+            this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.Location = new System.Drawing.Point(102, 150);
+            this.txt_pass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_pass.Multiline = true;
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.PasswordChar = '*';
-            this.txt_pass.Size = new System.Drawing.Size(210, 35);
+            this.txt_pass.Size = new System.Drawing.Size(141, 24);
             this.txt_pass.TabIndex = 9;
             // 
             // txt_username
             // 
             this.txt_username.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txt_username.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_username.Location = new System.Drawing.Point(153, 168);
+            this.txt_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_username.Location = new System.Drawing.Point(102, 109);
+            this.txt_username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_username.Multiline = true;
             this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(210, 35);
+            this.txt_username.Size = new System.Drawing.Size(141, 24);
             this.txt_username.TabIndex = 8;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -33);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -21);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(434, 225);
+            this.pictureBox1.Size = new System.Drawing.Size(289, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // form_login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(430, 380);
+            this.ClientSize = new System.Drawing.Size(287, 247);
             this.Controls.Add(this.bunifuCards1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "form_login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();

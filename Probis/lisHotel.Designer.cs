@@ -37,8 +37,8 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listflight)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,10 +60,10 @@
             this.btn_Back.IdleFillColor = System.Drawing.Color.Crimson;
             this.btn_Back.IdleForecolor = System.Drawing.Color.WhiteSmoke;
             this.btn_Back.IdleLineColor = System.Drawing.Color.Black;
-            this.btn_Back.Location = new System.Drawing.Point(688, 9);
-            this.btn_Back.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_Back.Location = new System.Drawing.Point(459, 6);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(98, 40);
+            this.btn_Back.Size = new System.Drawing.Size(65, 26);
             this.btn_Back.TabIndex = 86;
             this.btn_Back.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -85,10 +85,10 @@
             this.btn_hapus.IdleFillColor = System.Drawing.Color.LightPink;
             this.btn_hapus.IdleForecolor = System.Drawing.Color.Crimson;
             this.btn_hapus.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_hapus.Location = new System.Drawing.Point(664, 629);
-            this.btn_hapus.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btn_hapus.Location = new System.Drawing.Point(443, 409);
+            this.btn_hapus.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_hapus.Name = "btn_hapus";
-            this.btn_hapus.Size = new System.Drawing.Size(122, 51);
+            this.btn_hapus.Size = new System.Drawing.Size(81, 33);
             this.btn_hapus.TabIndex = 84;
             this.btn_hapus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -110,10 +110,10 @@
             this.btn_baru.IdleFillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_baru.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.btn_baru.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_baru.Location = new System.Drawing.Point(25, 629);
-            this.btn_baru.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btn_baru.Location = new System.Drawing.Point(17, 409);
+            this.btn_baru.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_baru.Name = "btn_baru";
-            this.btn_baru.Size = new System.Drawing.Size(184, 51);
+            this.btn_baru.Size = new System.Drawing.Size(123, 33);
             this.btn_baru.TabIndex = 83;
             this.btn_baru.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -127,10 +127,11 @@
             this.Column7,
             this.Column6,
             this.Column3});
-            this.dgv_listflight.Location = new System.Drawing.Point(23, 92);
+            this.dgv_listflight.Location = new System.Drawing.Point(15, 60);
+            this.dgv_listflight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_listflight.Name = "dgv_listflight";
             this.dgv_listflight.RowTemplate.Height = 28;
-            this.dgv_listflight.Size = new System.Drawing.Size(753, 513);
+            this.dgv_listflight.Size = new System.Drawing.Size(502, 333);
             this.dgv_listflight.TabIndex = 82;
             // 
             // Column1
@@ -153,33 +154,36 @@
             this.Column6.HeaderText = "Harga";
             this.Column6.Name = "Column6";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(287, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 55);
-            this.label1.TabIndex = 81;
-            this.label1.Text = "List Hotel";
-            // 
             // Column3
             // 
             this.Column3.HeaderText = "Tempat";
             this.Column3.Name = "Column3";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(191, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 38);
+            this.label1.TabIndex = 81;
+            this.label1.Text = "List Hotel";
+            // 
             // lisHotel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 693);
+            this.ClientSize = new System.Drawing.Size(533, 450);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.btn_hapus);
             this.Controls.Add(this.btn_baru);
             this.Controls.Add(this.dgv_listflight);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "lisHotel";
             this.Text = "masterHotel";
+            this.Load += new System.EventHandler(this.lisHotel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listflight)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
