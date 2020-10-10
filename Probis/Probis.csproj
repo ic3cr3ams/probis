@@ -62,9 +62,17 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\oraclexe\app\oracle\product\11.2.0\server\odp.net\bin\4\Oracle.DataAccess.dll</HintPath>
     </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>c:\program files (x86)\microsoft visual studio\2019\enterprise\common7\ide\extensions\m3m25bey.i3v\Assemblies\DataProviders\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -91,6 +99,12 @@
     <Compile Include="addHotel.Designer.cs">
       <DependentUpon>addHotel.cs</DependentUpon>
     </Compile>
+    <Compile Include="add_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_user.Designer.cs">
+      <DependentUpon>add_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="Book Hotel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +116,11 @@
     </Compile>
     <Compile Include="Booking Flight.Designer.cs">
       <DependentUpon>Booking Flight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="detailHarga.cs">
       <SubType>Form</SubType>
@@ -177,6 +196,9 @@
     <EmbeddedResource Include="addHotel.resx">
       <DependentUpon>addHotel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="add_user.resx">
+      <DependentUpon>add_user.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Book Hotel.resx">
       <DependentUpon>Book Hotel.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +247,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

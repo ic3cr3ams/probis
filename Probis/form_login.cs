@@ -42,7 +42,7 @@ namespace Probis
                     setupdata();
                     bool cekuser=false, cekpass=false;
                     string jabatan="";
-                    string user = "";
+                    //string user = "";
                     foreach (DataTable table in ds.Tables)
                     {
                         foreach(DataRow row in table.Rows)
@@ -70,9 +70,12 @@ namespace Probis
             }
         }
         private void setupdata(){
+            conn.Open();
             string query = "Select PEGAWAI_USERNAME as uname,PEGAWAI_PASSWORD as pass,PEGAWAI_JABATAN as jabatan FROM pegawai ";
             adapter = new OracleDataAdapter(query, conn);
             adapter.Fill(ds);
+            conn.Close();
+            conn.Close();
 
         }
     }

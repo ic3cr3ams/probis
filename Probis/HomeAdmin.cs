@@ -22,7 +22,9 @@ namespace Probis
         private void btnUser_Click(object sender, EventArgs e)
         {
             masterUser masterUser = new masterUser();
-            masterUser.Show();
+            this.Hide();
+            masterUser.ShowDialog();
+            this.Show();
         }
 
         private void HomeAdmin_Load(object sender, EventArgs e)

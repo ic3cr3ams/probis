@@ -41,7 +41,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(177, 19);
+            this.label1.Location = new System.Drawing.Point(367, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 38);
@@ -57,7 +57,7 @@
             this.btn_Back.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_Back.BackColor = System.Drawing.SystemColors.Control;
             this.btn_Back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Back.BackgroundImage")));
-            this.btn_Back.ButtonText = "Back";
+            this.btn_Back.ButtonText = "Logout";
             this.btn_Back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Back.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Back.ForeColor = System.Drawing.Color.Black;
@@ -66,10 +66,10 @@
             this.btn_Back.IdleFillColor = System.Drawing.Color.Crimson;
             this.btn_Back.IdleForecolor = System.Drawing.Color.WhiteSmoke;
             this.btn_Back.IdleLineColor = System.Drawing.Color.Black;
-            this.btn_Back.Location = new System.Drawing.Point(375, 8);
+            this.btn_Back.Location = new System.Drawing.Point(696, 11);
             this.btn_Back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(65, 26);
+            this.btn_Back.Size = new System.Drawing.Size(67, 32);
             this.btn_Back.TabIndex = 62;
             this.btn_Back.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
@@ -81,11 +81,11 @@
             this.dgv_listUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_listUser.Location = new System.Drawing.Point(8, 69);
-            this.dgv_listUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_listUser.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_listUser.Name = "dgv_listUser";
             this.dgv_listUser.ReadOnly = true;
             this.dgv_listUser.RowTemplate.Height = 28;
-            this.dgv_listUser.Size = new System.Drawing.Size(433, 278);
+            this.dgv_listUser.Size = new System.Drawing.Size(793, 278);
             this.dgv_listUser.TabIndex = 63;
             // 
             // btn_baru
@@ -112,6 +112,7 @@
             this.btn_baru.Size = new System.Drawing.Size(123, 33);
             this.btn_baru.TabIndex = 71;
             this.btn_baru.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_baru.Click += new System.EventHandler(this.btn_baru_Click);
             // 
             // btn_hapus
             // 
@@ -131,7 +132,7 @@
             this.btn_hapus.IdleFillColor = System.Drawing.Color.LightPink;
             this.btn_hapus.IdleForecolor = System.Drawing.Color.Crimson;
             this.btn_hapus.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_hapus.Location = new System.Drawing.Point(359, 365);
+            this.btn_hapus.Location = new System.Drawing.Point(718, 365);
             this.btn_hapus.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_hapus.Name = "btn_hapus";
             this.btn_hapus.Size = new System.Drawing.Size(81, 33);
@@ -142,13 +143,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 412);
+            this.ClientSize = new System.Drawing.Size(812, 412);
             this.Controls.Add(this.btn_hapus);
             this.Controls.Add(this.btn_baru);
             this.Controls.Add(this.dgv_listUser);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "masterUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "masterUser";
