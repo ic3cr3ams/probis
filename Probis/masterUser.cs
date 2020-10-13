@@ -42,7 +42,6 @@ namespace Probis
         private void btn_baru_Click(object sender, EventArgs e)
         {
             add_user add = new add_user();
-            this.Hide();
             add.ShowDialog();
             Loaddata();
             this.Show();

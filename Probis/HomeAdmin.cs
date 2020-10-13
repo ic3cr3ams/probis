@@ -36,5 +36,26 @@ namespace Probis
         {
             this.Close();
         }
+
+        private void btn_tour_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_hotel_Click(object sender, EventArgs e)
+        {
+            lisHotel lisHotel = new lisHotel();
+            this.Hide();
+            lisHotel.ShowDialog();
+            this.Show();
+        }
+
+        private void btn_flight_Click(object sender, EventArgs e)
+        {
+            ListFlight listFlight = new ListFlight();
+            this.Hide();
+            listFlight.ShowDialog();
+            this.Show();
+        }
     }
 }
