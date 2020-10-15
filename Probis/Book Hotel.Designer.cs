@@ -42,8 +42,6 @@
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.rbtn_deluxe = new System.Windows.Forms.RadioButton();
             this.rbtn_suite = new System.Windows.Forms.RadioButton();
-            this.rbtn_executive = new System.Windows.Forms.RadioButton();
-            this.rbtn_royal = new System.Windows.Forms.RadioButton();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btn_Pesan = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -192,30 +190,6 @@
             this.rbtn_suite.Text = "Suite Room";
             this.rbtn_suite.UseVisualStyleBackColor = true;
             // 
-            // rbtn_executive
-            // 
-            this.rbtn_executive.AutoSize = true;
-            this.rbtn_executive.Font = new System.Drawing.Font("Square721 BT", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_executive.Location = new System.Drawing.Point(395, 282);
-            this.rbtn_executive.Name = "rbtn_executive";
-            this.rbtn_executive.Size = new System.Drawing.Size(162, 24);
-            this.rbtn_executive.TabIndex = 40;
-            this.rbtn_executive.TabStop = true;
-            this.rbtn_executive.Text = "Executive Room";
-            this.rbtn_executive.UseVisualStyleBackColor = true;
-            // 
-            // rbtn_royal
-            // 
-            this.rbtn_royal.AutoSize = true;
-            this.rbtn_royal.Font = new System.Drawing.Font("Square721 BT", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_royal.Location = new System.Drawing.Point(395, 234);
-            this.rbtn_royal.Name = "rbtn_royal";
-            this.rbtn_royal.Size = new System.Drawing.Size(126, 24);
-            this.rbtn_royal.TabIndex = 41;
-            this.rbtn_royal.TabStop = true;
-            this.rbtn_royal.Text = "Royal Room";
-            this.rbtn_royal.UseVisualStyleBackColor = true;
-            // 
             // bunifuCustomLabel9
             // 
             this.bunifuCustomLabel9.AutoSize = true;
@@ -295,8 +269,6 @@
             this.Controls.Add(this.btn_Pesan);
             this.Controls.Add(this.bunifuCustomLabel10);
             this.Controls.Add(this.bunifuCustomLabel9);
-            this.Controls.Add(this.rbtn_royal);
-            this.Controls.Add(this.rbtn_executive);
             this.Controls.Add(this.rbtn_suite);
             this.Controls.Add(this.rbtn_deluxe);
             this.Controls.Add(this.bunifuCustomLabel8);
@@ -332,8 +304,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         private System.Windows.Forms.RadioButton rbtn_deluxe;
         private System.Windows.Forms.RadioButton rbtn_suite;
-        private System.Windows.Forms.RadioButton rbtn_executive;
-        private System.Windows.Forms.RadioButton rbtn_royal;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_Pesan;
