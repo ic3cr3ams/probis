@@ -57,7 +57,7 @@
             this.btn_Back.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_Back.BackColor = System.Drawing.SystemColors.Control;
             this.btn_Back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Back.BackgroundImage")));
-            this.btn_Back.ButtonText = "Logout";
+            this.btn_Back.ButtonText = "Back";
             this.btn_Back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Back.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Back.ForeColor = System.Drawing.Color.Black;
@@ -69,7 +69,7 @@
             this.btn_Back.Location = new System.Drawing.Point(696, 11);
             this.btn_Back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(67, 32);
+            this.btn_Back.Size = new System.Drawing.Size(75, 32);
             this.btn_Back.TabIndex = 62;
             this.btn_Back.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
@@ -87,6 +87,7 @@
             this.dgv_listUser.RowTemplate.Height = 28;
             this.dgv_listUser.Size = new System.Drawing.Size(793, 278);
             this.dgv_listUser.TabIndex = 63;
+            this.dgv_listUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_listUser_CellClick);
             // 
             // btn_baru
             // 
@@ -123,7 +124,7 @@
             this.btn_hapus.ActiveLineColor = System.Drawing.Color.Pink;
             this.btn_hapus.BackColor = System.Drawing.SystemColors.Control;
             this.btn_hapus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_hapus.BackgroundImage")));
-            this.btn_hapus.ButtonText = "Hapus";
+            this.btn_hapus.ButtonText = "Nonaktifkan";
             this.btn_hapus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_hapus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_hapus.ForeColor = System.Drawing.Color.Black;
@@ -132,12 +133,13 @@
             this.btn_hapus.IdleFillColor = System.Drawing.Color.LightPink;
             this.btn_hapus.IdleForecolor = System.Drawing.Color.Crimson;
             this.btn_hapus.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_hapus.Location = new System.Drawing.Point(718, 365);
+            this.btn_hapus.Location = new System.Drawing.Point(684, 365);
             this.btn_hapus.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_hapus.Name = "btn_hapus";
-            this.btn_hapus.Size = new System.Drawing.Size(81, 33);
+            this.btn_hapus.Size = new System.Drawing.Size(115, 33);
             this.btn_hapus.TabIndex = 72;
             this.btn_hapus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_hapus.Click += new System.EventHandler(this.btn_hapus_Click);
             // 
             // masterUser
             // 

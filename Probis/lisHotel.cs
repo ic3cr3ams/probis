@@ -20,14 +20,16 @@ namespace Probis
         }
         OracleConnection conn = form_login.conn;
         OracleDataAdapter da;
-        DataSet ds;
+        DataSet ds;  OracleDataAdapter da1;
+        DataSet ds1;
         DataTable dt = new DataTable();
 
 
         private void lisHotel_Load(object sender, EventArgs e)
         {
             conn.Open();
-            da = new OracleDataAdapter("Select hotel_id as id,hotel_name as nama,hotel_kota as kota,hotel_negara as negara,hotel_harga as harga from hotel", conn);
+
+            da = new OracleDataAdapter("Select h.hotel_id as id,h.hotel_name as nama,h.hotel_kota as kota,h.hotel_negara as negara,count(d.hotel_id) as jumlah_jenis from hotel h,dhotel d where h.hotel_id=d.hotel_id group by h.hotel_id,h.hotel_name, h.hotel_kota,h.hotel_negara", conn);
             ds = new DataSet();
             da.Fill(ds);
             da.Fill(dt);
@@ -46,6 +48,38 @@ namespace Probis
             add.ShowDialog();
             this.Show();
             lisHotel_Load(sender, e);
+        }
+
+        private void dgv_listHotel_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1) {
+                string id = dgv_listHotel.Rows[e.RowIndex].Cells[0].Value.ToString();
+                da1 = new OracleDataAdapter("select CONCAT(KAPASITAS,' Orang')as Kapasitas,JENIS_KAMAR AS \"Jenis Kamar\",Hotel_harga As Harga,breakfast,Keterangan as Keterangan from dhotel where Hotel_id='"+id+"'", conn);
+                ds1 = new DataSet();
+                da1.Fill(ds1);
+                foreach (DataTable dt in ds1.Tables) {
+                    foreach (DataRow rows in dt.Rows) {
+                        if (rows["BREAKFAST"].ToString() == "0")
+                        {
+                            rows["BREAKFAST"] = "Tidak Tersedia";
+                        }
+                        else rows["BREAKFAST"] = "Tersedia";
+                    }
+                }
+                dgv_detailHotel.DataSource = ds1.Tables[0];
+            }
+            
+            else
+            {
+                dgv_detailHotel.DataSource = null;
+
+            }
+
+        }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            dgv_detailHotel.DataSource = null;
         }
     }
 }

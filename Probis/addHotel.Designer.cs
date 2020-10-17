@@ -49,31 +49,35 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(180, 26);
+            this.label1.Location = new System.Drawing.Point(120, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 55);
+            this.label1.Size = new System.Drawing.Size(156, 38);
             this.label1.TabIndex = 14;
             this.label1.Text = "Add Hotel\r\n";
             // 
             // txt_nama
             // 
-            this.txt_nama.Location = new System.Drawing.Point(225, 107);
+            this.txt_nama.Location = new System.Drawing.Point(155, 70);
+            this.txt_nama.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_nama.Name = "txt_nama";
-            this.txt_nama.Size = new System.Drawing.Size(224, 26);
+            this.txt_nama.Size = new System.Drawing.Size(151, 20);
             this.txt_nama.TabIndex = 42;
             // 
             // txt_kota
             // 
-            this.txt_kota.Location = new System.Drawing.Point(225, 158);
+            this.txt_kota.Location = new System.Drawing.Point(155, 103);
+            this.txt_kota.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_kota.Name = "txt_kota";
-            this.txt_kota.Size = new System.Drawing.Size(224, 26);
+            this.txt_kota.Size = new System.Drawing.Size(151, 20);
             this.txt_kota.TabIndex = 44;
             // 
             // txt_negara
             // 
-            this.txt_negara.Location = new System.Drawing.Point(225, 203);
+            this.txt_negara.Location = new System.Drawing.Point(155, 131);
+            this.txt_negara.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_negara.Name = "txt_negara";
-            this.txt_negara.Size = new System.Drawing.Size(224, 26);
+            this.txt_negara.Size = new System.Drawing.Size(151, 20);
             this.txt_negara.TabIndex = 46;
             // 
             // btn_tambah
@@ -94,10 +98,10 @@
             this.btn_tambah.IdleFillColor = System.Drawing.Color.ForestGreen;
             this.btn_tambah.IdleForecolor = System.Drawing.Color.White;
             this.btn_tambah.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_tambah.Location = new System.Drawing.Point(413, 345);
-            this.btn_tambah.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btn_tambah.Location = new System.Drawing.Point(275, 224);
+            this.btn_tambah.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_tambah.Name = "btn_tambah";
-            this.btn_tambah.Size = new System.Drawing.Size(129, 68);
+            this.btn_tambah.Size = new System.Drawing.Size(86, 44);
             this.btn_tambah.TabIndex = 53;
             this.btn_tambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_tambah.Click += new System.EventHandler(this.btn_tambah_Click);
@@ -120,29 +124,31 @@
             this.btn_batal.IdleFillColor = System.Drawing.Color.Crimson;
             this.btn_batal.IdleForecolor = System.Drawing.Color.White;
             this.btn_batal.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_batal.Location = new System.Drawing.Point(27, 345);
-            this.btn_batal.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btn_batal.Location = new System.Drawing.Point(18, 224);
+            this.btn_batal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_batal.Name = "btn_batal";
-            this.btn_batal.Size = new System.Drawing.Size(123, 68);
+            this.btn_batal.Size = new System.Drawing.Size(82, 44);
             this.btn_batal.TabIndex = 54;
             this.btn_batal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_batal.Click += new System.EventHandler(this.btn_batal_Click);
             // 
             // txt_harga
             // 
-            this.txt_harga.Location = new System.Drawing.Point(225, 249);
+            this.txt_harga.Location = new System.Drawing.Point(155, 162);
+            this.txt_harga.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_harga.Name = "txt_harga";
-            this.txt_harga.Size = new System.Drawing.Size(224, 26);
+            this.txt_harga.Size = new System.Drawing.Size(151, 20);
             this.txt_harga.TabIndex = 56;
             this.txt_harga.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_harga_KeyPress);
             // 
             // rbtn_suite
             // 
             this.rbtn_suite.AutoSize = true;
-            this.rbtn_suite.Font = new System.Drawing.Font("Square721 BT", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_suite.Location = new System.Drawing.Point(358, 300);
+            this.rbtn_suite.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_suite.Location = new System.Drawing.Point(239, 195);
+            this.rbtn_suite.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbtn_suite.Name = "rbtn_suite";
-            this.rbtn_suite.Size = new System.Drawing.Size(126, 24);
+            this.rbtn_suite.Size = new System.Drawing.Size(90, 17);
             this.rbtn_suite.TabIndex = 59;
             this.rbtn_suite.TabStop = true;
             this.rbtn_suite.Text = "Suite Room";
@@ -151,10 +157,11 @@
             // rbtn_deluxe
             // 
             this.rbtn_deluxe.AutoSize = true;
-            this.rbtn_deluxe.Font = new System.Drawing.Font("Square721 BT", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_deluxe.Location = new System.Drawing.Point(215, 300);
+            this.rbtn_deluxe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_deluxe.Location = new System.Drawing.Point(143, 195);
+            this.rbtn_deluxe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbtn_deluxe.Name = "rbtn_deluxe";
-            this.rbtn_deluxe.Size = new System.Drawing.Size(137, 24);
+            this.rbtn_deluxe.Size = new System.Drawing.Size(100, 17);
             this.rbtn_deluxe.TabIndex = 58;
             this.rbtn_deluxe.TabStop = true;
             this.rbtn_deluxe.Text = "Deluxe Room";
@@ -163,58 +170,63 @@
             // bunifuCustomLabel8
             // 
             this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Square721 Cn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(43, 295);
+            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(29, 192);
+            this.bunifuCustomLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(145, 29);
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(122, 20);
             this.bunifuCustomLabel8.TabIndex = 57;
             this.bunifuCustomLabel8.Text = "Jenis Kamar : ";
             // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Square721 Cn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(42, 107);
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(19, 70);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(146, 29);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(123, 20);
             this.bunifuCustomLabel1.TabIndex = 60;
             this.bunifuCustomLabel1.Text = "Nama Hotel  : ";
             // 
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Square721 Cn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(108, 154);
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(76, 101);
+            this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(80, 29);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(66, 20);
             this.bunifuCustomLabel5.TabIndex = 61;
             this.bunifuCustomLabel5.Text = "Kota  : ";
             // 
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Square721 Cn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(82, 199);
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(55, 129);
+            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(106, 29);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(87, 20);
             this.bunifuCustomLabel3.TabIndex = 62;
             this.bunifuCustomLabel3.Text = "Negara  : ";
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Square721 Cn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(95, 246);
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(63, 160);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(93, 29);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(78, 20);
             this.bunifuCustomLabel2.TabIndex = 63;
             this.bunifuCustomLabel2.Text = "Harga  : ";
             // 
             // addHotel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 430);
+            this.ClientSize = new System.Drawing.Size(383, 279);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.bunifuCustomLabel3);
             this.Controls.Add(this.bunifuCustomLabel5);
@@ -229,6 +241,7 @@
             this.Controls.Add(this.txt_kota);
             this.Controls.Add(this.txt_nama);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "addHotel";
             this.Text = "addHotel";
             this.Load += new System.EventHandler(this.addHotel_Load);

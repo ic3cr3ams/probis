@@ -22,13 +22,23 @@ namespace Probis
         OracleDataAdapter da;
         DataSet ds = new DataSet();
         DataTable dt = new DataTable();
+        string idselected = "";
 
         private void masterUser_Load(object sender, EventArgs e)
         {
+            conn.Close();
             conn.Open();
             da = new OracleDataAdapter("Select * from pegawai", conn);
+            ds = new DataSet();
             da.Fill(ds);
-            da.Fill(dt);
+            foreach (DataTable dt in ds.Tables) {
+                foreach (DataRow row in dt.Rows) {
+                    if (row["PEGAWAI_STATUS"].ToString() == "0") {
+                        row["PEGAWAI_STATUS"] = "Tidak Aktif";
+                    }
+                    else row["PEGAWAI_STATUS"] = "Aktif";
+                }
+            }
             dgv_listUser.DataSource = ds.Tables[0];
             conn.Close();
 
@@ -54,6 +64,29 @@ namespace Probis
             da.Fill(ds);
             dgv_listUser.DataSource = ds.Tables[0];
             conn.Close();
+        }
+
+        private void dgv_listUser_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+                idselected = dgv_listUser.Rows[e.RowIndex].Cells[0].Value.ToString();
+            }
+            else idselected = "";
+        }
+
+        private void btn_hapus_Click(object sender, EventArgs e)
+        {
+            if (idselected == "") { MessageBox.Show("Harap Pilih User Terlebih Dahulu"); }
+            else
+            {
+                conn.Close();
+                conn.Open();
+                cmd = new OracleCommand("Update Pegawai set pegawai_status='0' where pegawai_id='" + idselected + "'",conn);
+                cmd.ExecuteNonQuery();
+                masterUser_Load(sender, e);
+                conn.Close();
+            }
         }
     }
 }
