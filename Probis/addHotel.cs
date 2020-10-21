@@ -34,7 +34,7 @@ namespace Probis
 
         private void btn_tambah_Click(object sender, EventArgs e)
         {
-            if (txt_nama.Text == "" || txt_kota.Text == "" || txt_negara.Text == "" || txt_harga.Text == "") { MessageBox.Show("Data Tidak Lengkap ! "); }
+            if (txt_nama.Text == "" || txt_kota.Text == "" || txt_negara.Text == "") { MessageBox.Show("Data Tidak Lengkap ! "); }
             else {
                 conn.Close();
                 conn.Open();
@@ -61,15 +61,13 @@ namespace Probis
 
                 string nama = txt_nama.Text;
                 string kota = txt_kota.Text;
-                string negara = txt_negara.Text;
-                int harga = Convert.ToInt32(txt_harga.Text);               
-                OracleCommand cmd = new OracleCommand("INSERT INTO HOTEL VALUES('"+idinput+"','"+nama+"',upper('"+kota+"'),upper('"+negara+"'),"+harga+")", conn);
+                string negara = txt_negara.Text;           
+                OracleCommand cmd = new OracleCommand("INSERT INTO HOTEL VALUES('"+idinput+"','"+nama+"',upper('"+kota+"'),upper('"+negara+"'))", conn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Sukes Input Data Hotel");
                 txt_nama.Text = "";
                 txt_kota.Text = "";
                 txt_negara.Text = "";
-                txt_harga.Text = "";
                 conn.Close();
                 this.Close();
             }

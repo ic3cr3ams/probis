@@ -99,6 +99,12 @@
     <Compile Include="addHotel.Designer.cs">
       <DependentUpon>addHotel.cs</DependentUpon>
     </Compile>
+    <Compile Include="add_dhotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_dhotel.Designer.cs">
+      <DependentUpon>add_dhotel.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_user.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addHotel.resx">
       <DependentUpon>addHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_dhotel.resx">
+      <DependentUpon>add_dhotel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="add_user.resx">
       <DependentUpon>add_user.cs</DependentUpon>
