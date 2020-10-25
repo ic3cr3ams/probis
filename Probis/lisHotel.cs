@@ -26,7 +26,6 @@ namespace Probis
         string idhotel = "";
         int indexdgvhotel = -1;
 
-
         private void lisHotel_Load(object sender, EventArgs e)
         {
             conn.Open();
@@ -129,6 +128,18 @@ namespace Probis
                 this.Show();
                 lisHotel_Load(sender, e);
 
+            }
+        }
+    
+        public static string pilihHotelid;
+        public static string pilihHotelNama;
+        private void dgv_detailHotel_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (Masterdetail.master == true && e.RowIndex!=-1)
+            {
+                pilihHotelid = dgv_listHotel.Rows[e.RowIndex].Cells[0].Value.ToString();
+                pilihHotelNama = dgv_listHotel.Rows[e.RowIndex].Cells[1].Value.ToString();
+                MessageBox.Show("Berhasil Memilih");
             }
         }
     }

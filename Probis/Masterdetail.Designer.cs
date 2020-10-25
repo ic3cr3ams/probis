@@ -39,7 +39,6 @@
             this.gb_detail = new System.Windows.Forms.GroupBox();
             this.btn_cancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_tambah = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.label6 = new System.Windows.Forms.Label();
             this.txt_catat = new System.Windows.Forms.TextBox();
             this.btn_pilihHotel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_pilih = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -58,8 +57,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_save = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.gb_namaP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_lama)).BeginInit();
@@ -71,9 +68,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(547, 9);
+            this.label1.Location = new System.Drawing.Point(365, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(391, 55);
+            this.label1.Size = new System.Drawing.Size(269, 38);
             this.label1.TabIndex = 78;
             this.label1.Text = "Details Paket Tour";
             // 
@@ -84,19 +82,22 @@
             this.gb_namaP.Controls.Add(this.label3);
             this.gb_namaP.Controls.Add(this.txt_nPaket);
             this.gb_namaP.Controls.Add(this.label2);
-            this.gb_namaP.Font = new System.Drawing.Font("NewsGoth BT", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_namaP.Location = new System.Drawing.Point(24, 85);
+            this.gb_namaP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gb_namaP.Location = new System.Drawing.Point(16, 55);
+            this.gb_namaP.Margin = new System.Windows.Forms.Padding(2);
             this.gb_namaP.Name = "gb_namaP";
-            this.gb_namaP.Size = new System.Drawing.Size(427, 177);
+            this.gb_namaP.Padding = new System.Windows.Forms.Padding(2);
+            this.gb_namaP.Size = new System.Drawing.Size(285, 115);
             this.gb_namaP.TabIndex = 79;
             this.gb_namaP.TabStop = false;
             this.gb_namaP.Text = "Nama Paket";
             // 
             // nud_lama
             // 
-            this.nud_lama.Location = new System.Drawing.Point(114, 88);
+            this.nud_lama.Location = new System.Drawing.Point(76, 57);
+            this.nud_lama.Margin = new System.Windows.Forms.Padding(2);
             this.nud_lama.Name = "nud_lama";
-            this.nud_lama.Size = new System.Drawing.Size(77, 27);
+            this.nud_lama.Size = new System.Drawing.Size(51, 20);
             this.nud_lama.TabIndex = 9;
             // 
             // btn_ok
@@ -117,38 +118,42 @@
             this.btn_ok.IdleFillColor = System.Drawing.Color.LawnGreen;
             this.btn_ok.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btn_ok.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_ok.Location = new System.Drawing.Point(340, 124);
-            this.btn_ok.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_ok.Location = new System.Drawing.Point(227, 81);
+            this.btn_ok.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ok.Name = "btn_ok";
-            this.btn_ok.Size = new System.Drawing.Size(70, 36);
+            this.btn_ok.Size = new System.Drawing.Size(47, 23);
             this.btn_ok.TabIndex = 8;
             this.btn_ok.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 90);
+            this.label3.Location = new System.Drawing.Point(4, 58);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 22);
+            this.label3.Size = new System.Drawing.Size(70, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Lama Tour :";
             // 
             // txt_nPaket
             // 
             this.txt_nPaket.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nPaket.Location = new System.Drawing.Point(113, 35);
+            this.txt_nPaket.Location = new System.Drawing.Point(75, 23);
+            this.txt_nPaket.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nPaket.Name = "txt_nPaket";
-            this.txt_nPaket.Size = new System.Drawing.Size(297, 26);
+            this.txt_nPaket.Size = new System.Drawing.Size(199, 20);
             this.txt_nPaket.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(38, 35);
+            this.label2.Location = new System.Drawing.Point(25, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 22);
+            this.label2.Size = new System.Drawing.Size(46, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nama : ";
             // 
@@ -156,7 +161,6 @@
             // 
             this.gb_detail.Controls.Add(this.btn_cancel);
             this.gb_detail.Controls.Add(this.btn_tambah);
-            this.gb_detail.Controls.Add(this.label6);
             this.gb_detail.Controls.Add(this.txt_catat);
             this.gb_detail.Controls.Add(this.btn_pilihHotel);
             this.gb_detail.Controls.Add(this.btn_pilih);
@@ -172,13 +176,16 @@
             this.gb_detail.Controls.Add(this.label5);
             this.gb_detail.Controls.Add(this.lbl_hari);
             this.gb_detail.Controls.Add(this.label4);
-            this.gb_detail.Font = new System.Drawing.Font("NewsGoth BT", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_detail.Location = new System.Drawing.Point(24, 268);
+            this.gb_detail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gb_detail.Location = new System.Drawing.Point(16, 174);
+            this.gb_detail.Margin = new System.Windows.Forms.Padding(2);
             this.gb_detail.Name = "gb_detail";
-            this.gb_detail.Size = new System.Drawing.Size(427, 639);
+            this.gb_detail.Padding = new System.Windows.Forms.Padding(2);
+            this.gb_detail.Size = new System.Drawing.Size(285, 415);
             this.gb_detail.TabIndex = 80;
             this.gb_detail.TabStop = false;
             this.gb_detail.Text = "Detail Paket / Hari";
+            this.gb_detail.Visible = false;
             this.gb_detail.Enter += new System.EventHandler(this.gb_detail_Enter);
             // 
             // btn_cancel
@@ -199,10 +206,10 @@
             this.btn_cancel.IdleFillColor = System.Drawing.Color.Red;
             this.btn_cancel.IdleForecolor = System.Drawing.Color.Honeydew;
             this.btn_cancel.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_cancel.Location = new System.Drawing.Point(10, 581);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_cancel.Location = new System.Drawing.Point(7, 378);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(83, 43);
+            this.btn_cancel.Size = new System.Drawing.Size(55, 28);
             this.btn_cancel.TabIndex = 21;
             this.btn_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -224,28 +231,21 @@
             this.btn_tambah.IdleFillColor = System.Drawing.Color.LimeGreen;
             this.btn_tambah.IdleForecolor = System.Drawing.Color.Honeydew;
             this.btn_tambah.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_tambah.Location = new System.Drawing.Point(317, 581);
-            this.btn_tambah.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_tambah.Location = new System.Drawing.Point(211, 378);
+            this.btn_tambah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_tambah.Name = "btn_tambah";
-            this.btn_tambah.Size = new System.Drawing.Size(93, 43);
+            this.btn_tambah.Size = new System.Drawing.Size(62, 28);
             this.btn_tambah.TabIndex = 20;
             this.btn_tambah.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 218);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(488, 19);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "hai guys, jdi ini button bakal muncul kalo sudah pilih jeni kendaraan";
+            this.btn_tambah.Click += new System.EventHandler(this.btn_tambah_Click);
             // 
             // txt_catat
             // 
-            this.txt_catat.Location = new System.Drawing.Point(88, 365);
+            this.txt_catat.Location = new System.Drawing.Point(59, 237);
+            this.txt_catat.Margin = new System.Windows.Forms.Padding(2);
             this.txt_catat.Multiline = true;
             this.txt_catat.Name = "txt_catat";
-            this.txt_catat.Size = new System.Drawing.Size(308, 210);
+            this.txt_catat.Size = new System.Drawing.Size(207, 138);
             this.txt_catat.TabIndex = 18;
             // 
             // btn_pilihHotel
@@ -266,12 +266,13 @@
             this.btn_pilihHotel.IdleFillColor = System.Drawing.Color.RoyalBlue;
             this.btn_pilihHotel.IdleForecolor = System.Drawing.Color.Honeydew;
             this.btn_pilihHotel.IdleLineColor = System.Drawing.Color.RosyBrown;
-            this.btn_pilihHotel.Location = new System.Drawing.Point(160, 276);
-            this.btn_pilihHotel.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_pilihHotel.Location = new System.Drawing.Point(107, 179);
+            this.btn_pilihHotel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_pilihHotel.Name = "btn_pilihHotel";
-            this.btn_pilihHotel.Size = new System.Drawing.Size(116, 43);
+            this.btn_pilihHotel.Size = new System.Drawing.Size(77, 28);
             this.btn_pilihHotel.TabIndex = 17;
             this.btn_pilihHotel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_pilihHotel.Click += new System.EventHandler(this.btn_pilihHotel_Click);
             // 
             // btn_pilih
             // 
@@ -291,12 +292,13 @@
             this.btn_pilih.IdleFillColor = System.Drawing.Color.LightSkyBlue;
             this.btn_pilih.IdleForecolor = System.Drawing.Color.Honeydew;
             this.btn_pilih.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_pilih.Location = new System.Drawing.Point(161, 227);
-            this.btn_pilih.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_pilih.Location = new System.Drawing.Point(107, 148);
+            this.btn_pilih.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_pilih.Name = "btn_pilih";
-            this.btn_pilih.Size = new System.Drawing.Size(73, 43);
+            this.btn_pilih.Size = new System.Drawing.Size(49, 28);
             this.btn_pilih.TabIndex = 9;
             this.btn_pilih.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_pilih.Visible = false;
             // 
             // cmb_jenis
             // 
@@ -304,34 +306,39 @@
             this.cmb_jenis.Items.AddRange(new object[] {
             "Bis",
             "Pesawat"});
-            this.cmb_jenis.Location = new System.Drawing.Point(161, 194);
+            this.cmb_jenis.Location = new System.Drawing.Point(107, 126);
+            this.cmb_jenis.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_jenis.Name = "cmb_jenis";
-            this.cmb_jenis.Size = new System.Drawing.Size(211, 27);
+            this.cmb_jenis.Size = new System.Drawing.Size(142, 21);
             this.cmb_jenis.TabIndex = 16;
+            this.cmb_jenis.SelectedIndexChanged += new System.EventHandler(this.cmb_jenis_SelectedIndexChanged);
             // 
             // txt_tujuan
             // 
             this.txt_tujuan.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tujuan.Location = new System.Drawing.Point(161, 154);
+            this.txt_tujuan.Location = new System.Drawing.Point(107, 100);
+            this.txt_tujuan.Margin = new System.Windows.Forms.Padding(2);
             this.txt_tujuan.Name = "txt_tujuan";
-            this.txt_tujuan.Size = new System.Drawing.Size(211, 26);
+            this.txt_tujuan.Size = new System.Drawing.Size(142, 20);
             this.txt_tujuan.TabIndex = 15;
             // 
             // txt_dari
             // 
             this.txt_dari.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dari.Location = new System.Drawing.Point(161, 114);
+            this.txt_dari.Location = new System.Drawing.Point(107, 74);
+            this.txt_dari.Margin = new System.Windows.Forms.Padding(2);
             this.txt_dari.Name = "txt_dari";
-            this.txt_dari.Size = new System.Drawing.Size(211, 26);
+            this.txt_dari.Size = new System.Drawing.Size(142, 20);
             this.txt_dari.TabIndex = 9;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(99, 121);
+            this.label13.Location = new System.Drawing.Point(66, 79);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 22);
+            this.label13.Size = new System.Drawing.Size(42, 16);
             this.label13.TabIndex = 14;
             this.label13.Text = "Dari  : ";
             // 
@@ -339,9 +346,10 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(84, 157);
+            this.label12.Location = new System.Drawing.Point(56, 102);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 22);
+            this.label12.Size = new System.Drawing.Size(55, 16);
             this.label12.TabIndex = 13;
             this.label12.Text = "Tujuan : ";
             // 
@@ -349,9 +357,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 196);
+            this.label11.Location = new System.Drawing.Point(4, 127);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(155, 22);
+            this.label11.Size = new System.Drawing.Size(110, 16);
             this.label11.TabIndex = 12;
             this.label11.Text = "Jenis Kendaraan  : ";
             // 
@@ -359,9 +368,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(77, 328);
+            this.label10.Location = new System.Drawing.Point(51, 213);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 22);
+            this.label10.Size = new System.Drawing.Size(58, 16);
             this.label10.TabIndex = 11;
             this.label10.Text = "Catatan : ";
             // 
@@ -369,26 +379,29 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(90, 288);
+            this.label8.Location = new System.Drawing.Point(60, 187);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 22);
+            this.label8.Size = new System.Drawing.Size(50, 16);
             this.label8.TabIndex = 9;
             this.label8.Text = "Hotel  : ";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(162, 76);
+            this.dateTimePicker1.Location = new System.Drawing.Point(108, 49);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
             this.dateTimePicker1.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(73, 79);
+            this.label5.Location = new System.Drawing.Point(49, 51);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 22);
+            this.label5.Size = new System.Drawing.Size(61, 16);
             this.label5.TabIndex = 5;
             this.label5.Text = "Tanggal  : ";
             // 
@@ -396,9 +409,10 @@
             // 
             this.lbl_hari.AutoSize = true;
             this.lbl_hari.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hari.Location = new System.Drawing.Point(165, 41);
+            this.lbl_hari.Location = new System.Drawing.Point(110, 27);
+            this.lbl_hari.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_hari.Name = "lbl_hari";
-            this.lbl_hari.Size = new System.Drawing.Size(19, 22);
+            this.lbl_hari.Size = new System.Drawing.Size(14, 16);
             this.lbl_hari.TabIndex = 4;
             this.lbl_hari.Text = "1";
             // 
@@ -406,19 +420,21 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Trebuchet MS", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(64, 41);
+            this.label4.Location = new System.Drawing.Point(43, 27);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 22);
+            this.label4.Size = new System.Drawing.Size(67, 16);
             this.label4.TabIndex = 4;
             this.label4.Text = "Hari ke -  : ";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(492, 85);
+            this.dataGridView1.Location = new System.Drawing.Point(328, 55);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1023, 629);
+            this.dataGridView1.Size = new System.Drawing.Size(682, 409);
             this.dataGridView1.TabIndex = 81;
             // 
             // btn_save
@@ -439,65 +455,47 @@
             this.btn_save.IdleFillColor = System.Drawing.Color.SteelBlue;
             this.btn_save.IdleForecolor = System.Drawing.Color.Honeydew;
             this.btn_save.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_save.Location = new System.Drawing.Point(1361, 741);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btn_save.Location = new System.Drawing.Point(907, 482);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(154, 102);
+            this.btn_save.Size = new System.Drawing.Size(103, 66);
             this.btn_save.TabIndex = 22;
             this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(571, 633);
+            this.label7.Location = new System.Drawing.Point(381, 411);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(568, 20);
+            this.label7.Size = new System.Drawing.Size(382, 13);
             this.label7.TabIndex = 82;
             this.label7.Text = "ini datagridview untuk munculin detail dari setiap hari tour yang sudah di tambah" +
     "";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(30, 54);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(756, 20);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "groupbox yang detail paket itu bakal enable sebanyak lama tour, jika sudah smpek " +
-    "maksnya lgsg di disable";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(539, 756);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(405, 20);
-            this.label14.TabIndex = 83;
-            this.label14.Text = "Button pilih akan ke list bis atau flight untuk pilih jenisnya";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(539, 802);
+            this.label15.Location = new System.Drawing.Point(359, 521);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(254, 20);
+            this.label15.Size = new System.Drawing.Size(172, 13);
             this.label15.TabIndex = 84;
             this.label15.Text = "button cari hotel untuk ke list hotel ";
             // 
             // Masterdetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1542, 933);
+            this.ClientSize = new System.Drawing.Size(1055, 602);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.gb_detail);
             this.Controls.Add(this.gb_namaP);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Masterdetail";
             this.Text = "detailPaket";
             this.gb_namaP.ResumeLayout(false);
@@ -535,15 +533,12 @@
         private System.Windows.Forms.NumericUpDown nud_lama;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_cancel;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_tambah;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_catat;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_pilihHotel;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_pilih;
         private System.Windows.Forms.ComboBox cmb_jenis;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_save;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
     }
 }

@@ -16,5 +16,10 @@ namespace Probis
         {
             InitializeComponent();
         }
+
+        private void btn_register_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

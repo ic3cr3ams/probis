@@ -39,7 +39,10 @@ namespace Probis
 
         private void btn_tour_Click(object sender, EventArgs e)
         {
-
+            Masterdetail Masterdetail = new Masterdetail();
+            this.Hide();
+            Masterdetail.ShowDialog();
+            this.Show();
         }
 
         private void btn_hotel_Click(object sender, EventArgs e)
