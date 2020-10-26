@@ -131,15 +131,15 @@ namespace Probis
             }
         }
     
-        public static string pilihHotelid;
-        public static string pilihHotelNama;
         private void dgv_detailHotel_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (Masterdetail.master == true && e.RowIndex!=-1)
             {
-                pilihHotelid = dgv_listHotel.Rows[e.RowIndex].Cells[0].Value.ToString();
-                pilihHotelNama = dgv_listHotel.Rows[e.RowIndex].Cells[1].Value.ToString();
+                Masterdetail.idhotel = dgv_listHotel.Rows[e.RowIndex].Cells[0].Value.ToString();
+                Masterdetail.namahotel= dgv_listHotel.Rows[e.RowIndex].Cells[1].Value.ToString();
+                Masterdetail.hargahotel = Convert.ToInt32(dgv_detailHotel.Rows[e.RowIndex].Cells[2].Value.ToString());
                 MessageBox.Show("Berhasil Memilih");
+                Masterdetail.master = false;
             }
         }
     }

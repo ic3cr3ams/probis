@@ -247,6 +247,7 @@
             this.txt_catat.Name = "txt_catat";
             this.txt_catat.Size = new System.Drawing.Size(207, 138);
             this.txt_catat.TabIndex = 18;
+            this.txt_catat.Leave += new System.EventHandler(this.txt_catat_Leave);
             // 
             // btn_pilihHotel
             // 
@@ -321,6 +322,7 @@
             this.txt_tujuan.Name = "txt_tujuan";
             this.txt_tujuan.Size = new System.Drawing.Size(142, 20);
             this.txt_tujuan.TabIndex = 15;
+            this.txt_tujuan.Leave += new System.EventHandler(this.txt_tujuan_Leave);
             // 
             // txt_dari
             // 
@@ -330,6 +332,7 @@
             this.txt_dari.Name = "txt_dari";
             this.txt_dari.Size = new System.Drawing.Size(142, 20);
             this.txt_dari.TabIndex = 9;
+            this.txt_dari.Leave += new System.EventHandler(this.txt_dari_Leave);
             // 
             // label13
             // 
@@ -429,6 +432,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(328, 55);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
@@ -461,6 +465,7 @@
             this.btn_save.Size = new System.Drawing.Size(103, 66);
             this.btn_save.TabIndex = 22;
             this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // label7
             // 

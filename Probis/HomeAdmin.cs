@@ -39,9 +39,9 @@ namespace Probis
 
         private void btn_tour_Click(object sender, EventArgs e)
         {
-            Masterdetail Masterdetail = new Masterdetail();
+            ListTour listtour = new ListTour();
             this.Hide();
-            Masterdetail.ShowDialog();
+            listtour.ShowDialog();
             this.Show();
         }
 
