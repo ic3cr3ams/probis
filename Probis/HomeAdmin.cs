@@ -60,5 +60,10 @@ namespace Probis
             listFlight.ShowDialog();
             this.Show();
         }
+
+        private void btn_laporan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
