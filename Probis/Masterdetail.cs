@@ -62,6 +62,46 @@ namespace Probis
             this.Close();
         }
 
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar <= (char)(47)) || (e.KeyChar >= (char)(58)))
+            {
+                if (e.KeyChar == (char)Keys.Back)
+                { }
+                else
+                {
+                    e.KeyChar = (Char)(0);
+                }
+            }
+            else
+            {
+            }
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            ctr = 1;
+            OracleCommand cmd = new OracleCommand("delete dpaket where tour_id='" +idinput+"'", conn);
+            gb_detail.Visible = false; nud_lama.Enabled = false; txt_nPaket.Enabled = false;
+            btn_ok.Enabled = true;
+            nud_lama.Enabled = true;
+            txt_nPaket.Enabled = true;
+            textBox1.Enabled = true;
+            lbl_hari.Text = "1";
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            cmd = new OracleCommand("delete paket_tour where tour_id='" + idinput + "'", conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            loadDgv();
+            MessageBox.Show("Semua Data Dibatalkan");
+        }
+
+        private void cmb_jenis_Leave(object sender, EventArgs e)
+        {
+            jenis = cmb_jenis.SelectedItem.ToString();
+        }
+
         private void btn_pilihHotel_Click(object sender, EventArgs e)
         {
             lisHotel lisHotel= new lisHotel();
@@ -73,29 +113,18 @@ namespace Probis
 
         private void btn_tambah_Click(object sender, EventArgs e)
         {
+
             if (txt_dari.Text != "" && txt_tujuan.Text != "")
             {
-                if (jenis == "Bis")
-                {
-                    totalharga += 500000;
-                }
-                else if (jenis == "Pesawat")
-                {
-                    totalharga += 1000000;
-                }
-                if (hargahotel != 0)
-                {
-                    totalharga += hargahotel;
-                }
-                hargahotel = 0;
                 if (ctr == total)
                 {
                     gb_detail.Visible = false; nud_lama.Enabled = false; txt_nPaket.Enabled = false;
+                    lbl_hari.Text = "1";
                     conn.Close();
                     conn.Open();
-                    OracleCommand cmd = new OracleCommand("INSERT INTO dpaket VALUES('" + idinput + "','" + dari + "','" + tujuan + "','" + jenis + "','" + namahotel + "','" + deskripsi + "')", conn);
+                    OracleCommand cmd = new OracleCommand("INSERT INTO dpaket VALUES('" + idinput + "','"+ctr+"','" + dari + "','" + tujuan + "','" + jenis + "','" + namahotel + "','" + deskripsi + "')", conn);
                     cmd.ExecuteNonQuery();
-                     cmd = new OracleCommand("update paket_tour set tour_harga = '" + totalharga + "' where tour_id = '" + idinput + "'", conn);
+                     cmd = new OracleCommand("update paket_tour set tour_harga = '" + Convert.ToInt32(textBox1.Text)+ "' where tour_id = '" + idinput + "'", conn);
                     cmd.ExecuteNonQuery();
                     conn.Close();
                 }
@@ -131,7 +160,7 @@ namespace Probis
 
 
 
-                        cmd = new OracleCommand("INSERT INTO dpaket VALUES('" + idinput + "','" + dari + "','" + tujuan + "','" + jenis + "','" + namahotel + "','" + deskripsi + "')", conn);
+                        cmd = new OracleCommand("INSERT INTO dpaket VALUES('" + idinput + "','"+ctr+"','" + dari + "','" + tujuan + "','" + jenis + "','" + namahotel + "','" + deskripsi + "')", conn);
                         cmd.ExecuteNonQuery();
                         ctr++;
                     }
@@ -139,7 +168,7 @@ namespace Probis
                     {
                         conn.Close();
                         conn.Open();
-                        OracleCommand cmd = new OracleCommand("INSERT INTO dpaket VALUES('" + idinput + "','" + dari+ "','" + tujuan+ "','" + jenis + "','" + namahotel + "','" + deskripsi+ "')", conn);
+                        OracleCommand cmd = new OracleCommand("INSERT INTO dpaket VALUES('" + idinput + "','" + +ctr + "','"+dari + "','" + tujuan+ "','" + jenis + "','" + namahotel + "','" + deskripsi+ "')", conn);
                         cmd.ExecuteNonQuery();
 
                         ctr++;
@@ -147,25 +176,28 @@ namespace Probis
                     }
 
                 }
+                dari = "-";
+                tujuan = "-";
+                jenis = "-";
+                namahotel = "-";
+                deskripsi = "-";
+                loadDgv();
+                txt_dari.Text = "";
+                txt_tujuan.Text = "";
+                cmb_jenis.SelectedIndex = -1;
+                txt_catat.Text = "";
+                lbl_hari.Text = ctr.ToString();
             }
             else MessageBox.Show("Asal Dan Tujuan Harus terisi");
-            dari = "-";
-            tujuan = "-";
-            jenis = "-";
-            namahotel = "-";
-            deskripsi = "-";
-            loadDgv();
-            txt_dari.Text = "";
-            txt_tujuan.Text = "";
-            cmb_jenis.SelectedIndex = -1;
-            txt_catat.Text = "";
+
         }
 
         void loadDgv()
         {
             OracleCommand query = new OracleCommand("SELECT ddari as Dari,ddtujuan as Tujuan,dkendaraan as Kendaraan,dhotel_nama as Hotel,tour_deskripsi as Deskripsi" +
                 "                                   FROM dpaket " +
-                "                                   where tour_id= '" + idinput + "' ", conn);
+                "                                   where tour_id= '" + idinput + "' " +
+                "                                    order by dhari", conn);
             da= new OracleDataAdapter(query);
             ds= new DataSet();
             conn.Close();
@@ -178,6 +210,8 @@ namespace Probis
         {
             if (Convert.ToInt32(nud_lama.Value)>0 && txt_nPaket.Text!="")
             {
+                btn_ok.Enabled = false;
+                textBox1.Enabled = false;
                 txt_nPaket.Enabled = false;
                 nud_lama.Enabled = false;
                 total = Convert.ToInt32(nud_lama.Value);

@@ -22,7 +22,7 @@ namespace Probis
         DataTable dt = new DataTable();
         OracleDataAdapter adapter = new OracleDataAdapter();
         OracleCommand cmd;
-        
+        public static string user;
 
         private void btn_login_Click(object sender, EventArgs e)
         {
@@ -61,6 +61,11 @@ namespace Probis
                     //MessageBox.Show(user);
                     if(cekuser && cekpass) {
                         MessageBox.Show("Berhasil Login "+jabatan+" !");
+                        user = txt_username.Text;
+                        Home h = new Home();
+                        this.Hide();
+                        h.ShowDialog();
+                        this.Show();
                     }
                     else {
                         if (!cekuser) { MessageBox.Show("Username Tidak Ditemukan !"); }

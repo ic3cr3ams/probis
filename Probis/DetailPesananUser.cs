@@ -16,5 +16,13 @@ namespace Probis
         {
             InitializeComponent();
         }
+
+        private void btn_bayar_Click(object sender, EventArgs e)
+        {
+            pesananBerhasil p = new pesananBerhasil();
+            this.Hide();
+            p.ShowDialog();
+            this.Show();
+        }
     }
 }

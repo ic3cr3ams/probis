@@ -16,5 +16,13 @@ namespace Probis
         {
             InitializeComponent();
         }
+
+        private void btn_detailHarga_Click(object sender, EventArgs e)
+        {
+            detailHarga d = new detailHarga();
+            this.Hide();
+            d.ShowDialog();
+            this.Show();
+        }
     }
 }

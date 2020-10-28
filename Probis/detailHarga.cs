@@ -21,5 +21,13 @@ namespace Probis
         {
 
         }
+
+        private void btn_pesan_Click(object sender, EventArgs e)
+        {
+            Booking_Flight b = new Booking_Flight();
+            this.Hide();
+            b.ShowDialog();
+            this.Show();
+        }
     }
 }
